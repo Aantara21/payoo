@@ -26,19 +26,19 @@
                     <div class="divider"></div>
                     <!-- button  -->
                     <div>
-                        <button class="btn btn-active">Add Money</button>
-                        <button class="btn btn-active">Cash Out</button>
+                        <button id="add-money" class="btn btn-active">Add Money</button>
+                        <button id="cash-out" class="btn btn-active">Cash Out</button>
                     </div>
                     <div class="divider"></div>
                     <!-- Cash in form  -->
                     <div>
-                        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl hidden">
+                        <div id="cash-in-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl ">
                             <form class="card-body">
                                 <div class="form-control">
                                     <label class="label">
                                         <span class="label-text">Amount</span>
                                     </label>
-                                    <input id="input-give-amount" type="text" placeholder="Amount" class="input input-bordered" required />
+                                    <input id="input-give-amount" type="text" placeholder="Give cash in Amount" class="input input-bordered" required />
                                 </div>
                                 <div class="form-control">
                                     <label class="label">
@@ -57,13 +57,13 @@
 
                     <!-- cash out form  -->
                     <div>
-                        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <div id="cash-out-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl hidden">
                             <form class="card-body">
                                 <div class="form-control">
                                     <label class="label">
                                         <span class="label-text">Amount</span>
                                     </label>
-                                    <input id="cashout-amount" type="text" placeholder="Amount" class="input input-bordered" required />
+                                    <input id="cashout-amount" type="text" placeholder="Give cash out Amount" class="input input-bordered" required />
                                 </div>
                                 <div class="form-control">
                                     <label class="label">
@@ -89,6 +89,7 @@
 
     </main>
     <script src="js/home.js"></script>
+    <script src="toggole.js"></script>
 </body>
 
 </html>
